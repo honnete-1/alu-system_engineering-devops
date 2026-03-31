@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Debugged web stack 0 container
+apt-get update -y                                        # Refresh package list
+apt-get install -y apache2                               # Install Apache (missing in container)
+echo "Hello Holberton" > /var/www/html/index.html        # Create the required page
+echo "ServerName localhost" >> /etc/apache2/apache2.conf # Suppress Apache warnings
+service apache2 start                                    # Start Apache
