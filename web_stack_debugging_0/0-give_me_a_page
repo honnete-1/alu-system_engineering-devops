@@ -5,3 +5,4 @@ apt-get install -y apache2                               # Install Apache (missi
 echo "Hello Holberton" > /var/www/html/index.html        # Create the required page
 echo "ServerName localhost" >> /etc/apache2/apache2.conf # Suppress Apache warnings
 service apache2 start                                    # Start Apache
+echo "apache2 is running"
